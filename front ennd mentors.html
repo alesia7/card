@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+
+
+    <title>Frontend Mentor | Order summary card</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Red Hat Display", sans-serif;
+            line-height: 1.7;
+        }
+
+        body {
+            background-image: url("pattern-background-desktop.svg");
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-color: hsl(225, 100%, 94%);
+        }
+
+        .card {
+            background: white;
+            width: 350px;
+            height: 550px;
+            border-radius: 10px;
+        }
+
+        .card .hero-icon {
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content {
+            color: hsl(224, 23%, 55%);
+            padding: 25px;
+        }
+
+        .content h2 {
+            color: hsl(223, 47%, 23%);
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .content .sub-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-content: center;
+            align-items: center;
+            background: hsl(225, 100%, 98%);
+            border-radius: 10px;
+            padding: 15px 5px;
+            margin: 20px 0px;
+        }
+
+        .sub-content .sub-content-2 {
+            text-align: left;
+            margin-left: 5px;
+        }
+
+        .sub-content .sub-content-2 h2 {
+            font-size: 16px;
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+
+        .sub-content .sub-content-3 a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .content .but1 {
+            background: hsl(245, 75%, 52%);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 10px 75px;
+            margin-bottom: 30px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 15px 7px hsl(220, 100%, 95%);
+        }
+
+        .but2 {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            
+        }
+
+        @media (max-width: 500px) {
+            .card .content {
+                padding: 20px;
+            }
+
+            .content button,
+            .but2 {
+                padding: 10px 65px;
+                margin-bottom: 20px;
+            }
+        }
+
+        footer {
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+            margin: 15px auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            color: hsl(223, 47%, 23%);
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="card">
+            <img class="hero-icon" src="illustration-hero.svg" alt="illustration-hero">
+            <div class="content">
+                <h2>Order Summary</h2>
+                <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+                </p>
+                <div class="sub-content">
+                    <div class="sub-content-1">
+                        <img src="icon-music.svg" alt="music-icon">
+                    </div>
+                    <div class="sub-content-2">
+                        <h2>Annual Plan</h2>
+                        <p>$59.99/year</p>
+                    </div>
+                    <div class="sub-content-3">
+                        <a href="#">Change</a>
+                    </div>
+                </div>
+                <button class="but1">Proceed to Payment</button>
+                <button class="but2">Cancel Order</button>
+            </div>
+        </div>
+    </section>
+    <footer> Challenge by  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by Alesia. </footer>
+</body>
+
+</html>
